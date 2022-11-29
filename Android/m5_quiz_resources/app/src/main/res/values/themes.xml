@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Skillbox_hw_quiz" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#49267A</item>
+        <item name="colorPrimaryVariant">@color/purple_200</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:fontFamily">opensans_bold.tttf</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/design_default_color_error</item>
+        <item name="colorSecondaryVariant">@color/design_default_color_on_primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/ic_launcher_background</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.Skillbox_hw_quiz.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Skillbox_hw_quiz.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Skillbox_hw_quiz.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

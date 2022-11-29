@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/first_text_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="22sp"
+        android:text="@string/first_question"
+       android:layout_gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/first_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <RadioButton
+            android:id="@+id/first_first_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_first_first"
+             />
+        <RadioButton
+            android:id="@+id/first_second_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_first_second"
+            />
+        <RadioButton
+            android:id="@+id/first_third_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_first_third"
+            />
+        <RadioButton
+            android:id="@+id/first_fourth_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_first_four"
+            />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/second_text_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="22sp"
+        android:text="@string/second_question"
+        android:layout_gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/second_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <RadioButton
+            android:id="@+id/second_first_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_second_first"
+            />
+        <RadioButton
+            android:id="@+id/second_second_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_second_second"
+            />
+        <RadioButton
+            android:id="@+id/second_third_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_second_third"
+            />
+        <RadioButton
+            android:id="@+id/second_fouth_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_second_four"
+            />
+
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/third_text_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="22sp"
+        android:text="@string/third_question"
+        android:layout_gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/third_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <RadioButton
+            android:id="@+id/third_first_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_third_first"
+            />
+        <RadioButton
+            android:id="@+id/third_second_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_third_second"
+            />
+        <RadioButton
+            android:id="@+id/third_third_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_third_third"
+            />
+        <RadioButton
+            android:id="@+id/third_fourth_radio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/radio_button_third_four"
+            />
+
+    </RadioGroup>
+</androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

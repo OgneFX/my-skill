@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:id="@+id/custom_button_verh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="@string/textone" />
+
+    <TextView
+        android:id="@+id/custom_button_niz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="@string/texttwo" />
+
+
+</LinearLayout>

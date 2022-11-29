@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Skillbox quiz game</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="back">Назад</string>
+    <string name="go">Начать</string>
+    <string name="result">Получить результат</string>
+    <string name="again">Начать заново</string>
+
+
+
+    <string name="first_question">Как тебе наш курс?</string>
+    <string name="radio_button_first_first">на 2</string>
+    <string name="radio_button_first_second">на 3</string>
+    <string name="radio_button_first_third">на 4</string>
+    <string name="radio_button_first_four">на 5</string>
+
+    <string name="second_question">Порекомендуешь его друзьям?</string>
+    <string name="radio_button_second_first">Обязательно</string>
+    <string name="radio_button_second_second">Уже порекомендовал</string>
+    <string name="radio_button_second_third">Посмотрим, что будет дальше</string>
+    <string name="radio_button_second_four">Нет</string>
+
+    <string name="third_question">Пользовался ли ты обратной связью?</string>
+    <string name="radio_button_third_first">Да</string>
+    <string name="radio_button_third_second">Еще нет, но сейчас воспользуюсь</string>
+    <string name="radio_button_third_third">Нет, еще не приходилось</string>
+    <string name="radio_button_third_four">Нет, и не буду</string>
+
+
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

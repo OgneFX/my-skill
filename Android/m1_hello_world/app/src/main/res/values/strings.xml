@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActOne</string>
+    <string name="button_name">СБРОС</string>
+    <string name="center_text">Все места свободны</string>
+    <string name="counter_bottom">0</string>
+
+</resources>

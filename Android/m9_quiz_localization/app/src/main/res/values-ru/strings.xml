@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Skillbox quiz game</string>
+    <string name="next">Далее</string>
+    <string name="back">Назад</string>
+    <string name="go">Начать</string>
+    <string name="result">Получить результат</string>
+    <string name="again">Начать заново</string>
+    <string name="day_born">Введите день рождения</string>
+    <string name="choose_the_data_title">Введите свой день рождения</string>
+</resources>

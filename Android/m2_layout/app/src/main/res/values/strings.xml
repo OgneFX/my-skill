@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActTwo</string>
+    <string name="textone">Верхняя Строчка</string>
+    <string name="texttwo">Нижняя Строчка</string>
+</resources>
