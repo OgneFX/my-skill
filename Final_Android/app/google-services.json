@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "394632025112",
+    "project_id": "final-project-5d610",
+    "storage_bucket": "final-project-5d610.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394632025112:android:a44904442f99a7e3775f6d",
+        "android_client_info": {
+          "package_name": "com.example.finalskillcinema"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394632025112-a7qajv2ebb4atvk92cvd0ka1u6l9tmg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ34ueNGoTWuTDhFMNyGCRuRADh6ACFkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394632025112-a7qajv2ebb4atvk92cvd0ka1u6l9tmg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

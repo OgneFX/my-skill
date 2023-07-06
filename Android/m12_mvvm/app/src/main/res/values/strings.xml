@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActTwelve</string>
+    <string name="main_text">Здесь будет отображаться результат запроса</string>
+    <string name="button_text">Поиск</string>
+</resources>

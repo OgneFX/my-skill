@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">FinalSkillCinema</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <!-- Intro fragments -->
+    <string name="intro_skip">Пропустить</string>
+    <string name="intro_first_text">Узнавай\nо премьерах</string>
+    <string name="intro_second_text">Создавай\n колеекции</string>
+    <string name="intro_third_text">Делись\nс друзьями</string>
+
+    <!-- Menu inner container -->
+    <string name="button_try_again">Поптобовать ещё раз…</string>
+    <string name="button_show_all_top">Все</string>
+    <string name="button_show_all_end">Показать все</string>
+
+    <!-- Search -->
+    <string name="season_episode_name">%d серия. %s</string>
+    <string name="seasons_and_series">Сезоны и серии</string>
+    <string name="seasons">Сезон</string>
+    <string name="serias">%d серия. %s</string>
+<!--    <string name="season_chip_name">%d</string>-->
+    <string name="seasons_sec">%d сезон, %s</string>
+    <string name="filmography">Фильмография</string>
+    <string name="films_actors_reg">Фильмы, актёры, режиссёры</string>
+    <string name="search_not_found">К сожалению, по Вашему запросу\nничего не найдено</string>
+    <string name="search_clear_message">Фильтр сброшен</string>
+
+    <!-- Search YearPicker fragment -->
+    <string name="year_piker_title">Период</string>
+    <string name="year_piker_label_from">Искать в период с:</string>
+    <string name="year_piker_label_to">Искать в период до:</string>
+    <string name="year_picker_btn">Выбрать</string>
+    <string name="search_filter_clear">Очистить фильр</string>
+
+    <!-- Series seasons/episodes fragment -->
+    <string name="label_season_episodes_count">Сезон</string>
+    <string name="season_chip_name">%d</string>
+    <string name="episodes_count">%d сезон, %s</string>
+    <string name="search_edittext_hint">Фильмы, актёры, режиссёры</string>
+
+
+    <!-- Search setting fragment -->
+    <string name="search_settings_title">Настройки поиска</string>
+    <string name="search_settings_label_show">Показывать</string>
+    <string name="search_settings_radio_all">Все</string>
+    <string name="search_settings_radio_films">Фильмы</string>
+    <string name="search_settings_radio_series">Сериалы</string>
+    <string name="search_settings_rating_text">от %d до %d</string>
+    <string name="search_settings_years_text">с %d до %d</string>
+    <string name="search_settings_country_label">Страна</string>
+    <string name="search_settings_genre_label">Жанр</string>
+    <string name="search_settings_rating_label">Рейтинг</string>
+    <string name="search_settings_year_label">Год</string>
+    <string name="search_settings_radio_popular">Популярность</string>
+    <string name="search_settings_radio_rating">Рейтинг</string>
+    <string name="search_settings_radio_date">Дата</string>
+    <string name="search_settings_sorting_label">Сортировать</string>
+    <string name="search_filters_country_choose">Введите страну</string>
+    <string name="search_filters_genre_choose">Введите жанр</string>
+    <string name="search_filters_countries_default">Все страны</string>
+    <string name="search_filters_genres_default">Все жанры</string>
+
+    <!-- Film Detail -->
+    <string name="label_series_seasons">Сезоны и серии</string>
+    <string name="label_film_actors">В фильме снимались</string>
+    <string name="label_film_makers">Над фильмом работали</string>
+    <string name="label_film_gallery">Галерея</string>
+    <string name="label_film_similar">Похожие фильмы</string>
+    <string name="seasons_episodes_count">%s, %s</string>
+    <string name="placeholder_series_start_year">_</string>
+    <string name="placeholder_series_end_year">н.в.</string>
+    <string name="label_filmography">Фильмография</string>
+    <string name="staff_detail_best_label">Лучшее</string>
+    <string name="staff_detail_filmography_label">Фильмография</string>
+    <string name="staff_detail_filmography_all">К списку</string>
+
+
+    <!-- Profile fragment -->
+    <string name="profile_label_is_viewed">Просмторено</string>
+    <string name="profile_label_favorite">Вам было интересно</string>
+    <string name="profile_label_collections">Коллекции</string>
+    <string name="profile_label_create_collection">Создать свою коллекцию</string>
+    <string name="profile_item_clear_label">Очистить историю</string>
+
+
+    <!-- Menu main navigation -->
+    <string name="home_text_button">Главная</string>
+    <string name="search_text_button">Поиск</string>
+    <string name="profile_text_button">Профиль</string>
+
+
+    <!-- Galery -->
+    <string name="title_gallery">Главная</string>
+    <string name="chip_name">%s %d</string>
+    
+</resources>

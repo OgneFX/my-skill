@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/photoGalery">
+
+    <fragment
+        android:id="@+id/photoGalery"
+        android:name="Presentation.PhotoGalery"
+        android:label="fragment_photo_galery"
+        tools:layout="@layout/fragment_photo_galery" >
+        <action
+            android:id="@+id/action_photoGalery_to_photoCamera"
+            app:destination="@id/photoCamera" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoCamera"
+        android:name="Presentation.PhotoCamera"
+        android:label="fragment_photo_camera"
+        tools:layout="@layout/fragment_photo_camera" >
+        <action
+            android:id="@+id/action_photoCamera_to_photoGalery"
+            app:destination="@id/photoGalery" />
+    </fragment>
+</navigation>
