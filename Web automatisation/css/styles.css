@@ -340,6 +340,27 @@ body {
     left: 100%;
   }
 
+  /* Бренды с которыми работаем */
+
+  .brend-job{
+    background-color: #4f646e;
+    
+}
+
+.brends {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1150px;
+    height: 50px;
+    
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+    border: 3px solid #0c1685; 
+}
+
 
   
   
