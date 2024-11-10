@@ -151,12 +151,17 @@ body {
     
 }
 
+.service-color {
+    background-color: #4f646e;
+}
+
 .service-card-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin-top: 80px;
+    margin-bottom: 80px;
     padding: 0;
    
     list-style: none;
@@ -199,5 +204,143 @@ body {
 .service-button-image:hover {
     transform: scale(1.1);
 }
+
+
+/* form section */
+
+
+.form-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1150px;
+
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+    border: 3px solid #0c1685; 
+}
+
+
+
+
+.form-section-text {
+    margin-left: 30px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #D9D9D9;
+
+}
+
+/* Форма */
+
+.login-box {
+    
+    padding: 40px;
+    margin-right: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+    /* Кнопка в форме */
+
+    .login-box-button p {
+    margin: 0;
+    font-size: 25px;
+    padding: 5px 10px;
+    color: #010101;
+  }
+  
+  .login-box-button {
+    text-decoration: none;
+    border: 1px solid rgb(144, 144, 157);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .login-box-button:hover {
+    box-shadow: 1px 1px 25px 10px rgba(120, 120, 129, 0.4);
+  }
+  
+  .login-box-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(147, 135, 143, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .login-box-button:hover:before {
+    left: 100%;
+  }
+
+
+  
   
   
