@@ -175,7 +175,6 @@ body {
     outline: none;
     cursor: pointer;
     display: flex;
-    
     align-items: center;
     justify-content: space-between;
     width: 280px;
@@ -405,8 +404,65 @@ body {
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
-    
     justify-content: flex-start;
     border: 3px solid #14a0cf; 
 }
+
+
+/* reviews (Отзывы) */
+
+.reviews {
+    
+    background-color: #3c3838;
+}
+
+.reviews-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1150px;
+    margin: 0 auto;
+    border: 3px solid #e12211; 
+}
+
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 0;
+    border: 3px solid #119fe1; 
+    list-style: none;
+}
+
+.reviews-item-form {
+    
+    background-image: linear-gradient(0.55turn, #303331, #4f646e);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.reviews-item-img-chel {
+    border-radius: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+.reviews-item-text {
+    padding-right: 20px;
+
+}
+
+
+
+
 
