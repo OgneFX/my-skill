@@ -143,10 +143,9 @@ body {
 .services {
     display: flex;
     align-items: center;
-    
+    justify-content: center;
     width: 1150px;
     margin: 0 auto;
-    
     border: 3px solid #850c0c; 
     
 }
@@ -155,10 +154,9 @@ body {
     background-color: #4f646e;
 }
 
-.service-card-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -181,8 +179,14 @@ body {
     height: 200px;
     border-radius: 30px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
+
+.service-button.expanded {
+    grid-column: span 2;
+    grid-row: span 2;
+    transform: scale(1.5); /* Можно изменить масштабирование */
+  }
 
 .service-button-image {
     align-self: flex-end;
