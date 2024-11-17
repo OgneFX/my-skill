@@ -157,12 +157,12 @@ body {
     grid-auto-flow: dense;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    
+    grid-auto-rows: 1fr;
     margin-top: 80px;
     margin-bottom: 80px;
     padding: 0;
-    
-    max-width: 1000px;
+    max-height: 1000px;
+    max-width: 1150px;
     max-height: max-content;
     border: 3px solid #D9D9D9; 
 }
@@ -188,6 +188,11 @@ body {
     grid-row: span 2;
     transform: scale(1); 
   }
+
+  .service-button.bottom-right {
+    grid-column: 2 / span 2; /* Начинаем со второй колонки */
+    grid-row: 2 / span 2;    /* Начинаем со второй строки */
+}
 
 .service-button-image {
     align-self: flex-end;
