@@ -521,3 +521,13 @@ body {
 
 
 
+/* Нижняя форма заполнения */
+
+.footer-form-section {
+    width: 1150px;
+    margin: 0 auto;
+    border: 3px solid #bfadab; 
+}
+
+
+
