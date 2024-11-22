@@ -525,9 +525,14 @@ body {
 
 .footer-form-section {
     width: 1150px;
-    margin: 0 auto;
+    margin: 40px auto;
+    
     border: 3px solid #bfadab; 
 }
 
+.footer-login-box {
+    margin: 0;
+    
+}
 
 
