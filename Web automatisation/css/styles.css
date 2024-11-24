@@ -23,6 +23,7 @@ body {
     background-image: radial-gradient(circle, #414d63, #0d8168);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    transition: background-color 0.5s ease;
 }
 
 
@@ -106,6 +107,7 @@ body {
     padding: 0;
     padding-right: 50px;
     list-style: none;
+    
 }
 
 .view-buttons button {
@@ -121,16 +123,21 @@ body {
 }
 
 .view-buttons button:hover {
-    opacity: 0.5;
+    opacity: 0.8;
   }
   
 .view-buttons button:active {
-    opacity: 0.3;
+    opacity: 0.6;
   }
   
 .view-buttons .active {
     background-color: rgb(9, 131, 153);
   }
+
+  .view-buttons button.active {
+    background-color: rgb(9, 131, 153);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
 
 
 
