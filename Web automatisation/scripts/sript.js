@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".view-button");
   const image = document.querySelector(".main-image");
   const images = [
-      "img/camera-tiandy.png",
+      "img/camera-tiandy2.png",
       "img/oven-plk.png",
-      "img/wirenboard-plk.png",
-      "img/camera-tiandy4.png",
+      "img/wirenboard-plk7.png",
+      "img/camera-tiandy.png",
       "img/camera-tiandy5.png",
   ];
 
