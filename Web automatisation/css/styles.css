@@ -8,16 +8,9 @@ body {
 }
 
 /* header styles */
-.site-navigation-item a {
-    font-size: 20px;
-    color: #D9D9D9;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-
 .main-header {
     height: 650px;
+    
     margin: 0px auto;
     padding: 15px 0px;
     background-image: radial-gradient(circle, #414d63, #0d8168);
@@ -25,8 +18,6 @@ body {
     border-bottom-right-radius: 40px;
     transition: background-color 0.5s ease;
 }
-
-
 
 .main-nav {
     width: 1150px;
@@ -48,6 +39,16 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+
+.site-navigation-item a {
+    font-size: 20px;
+    color: #D9D9D9;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
 
 .site-navigation {
   padding: 0;
@@ -153,23 +154,31 @@ body {
     justify-content: center;
     width: 1150px;
     margin: 0 auto;
+    
 }
 
 
 .grid-container {
     display: grid;
     grid-auto-flow: dense;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
     grid-auto-rows: 1fr;
     margin-top: 80px;
     margin-bottom: 80px;
     padding: 0;
-    max-height: 1000px;
-    max-width: 1150px;
-    max-height: max-content;
-    
+    position: relative;
+    max-width: 1150px;   
+    transition: all 0.5s ease;
+     
+}
+
+.grid-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 
@@ -186,28 +195,32 @@ body {
     height: 100%;
     border-radius: 30px;
     overflow: hidden;
-    transition: transform 0.5s ease, grid-column 0.5s ease, grid-row 0.5s ease;
+    position: relative;
+    z-index: 0;
+    transition: all 1s ease;
+    
     
 }
 
-.service-button.expanded {
+.grid-item.expanded {
     grid-column: span 2;
     grid-row: span 2;
     z-index: 1;
-    transform: scale(1.05); 
-    
+   
   }
 
-  .service-button.bottom-right {
-    grid-column: 2 / span 2; /* Начинаем со второй колонки */
-    grid-row: 2 / span 2;    /* Начинаем со второй строки */
+.grid-item.bottom-right {
+    grid-column: 2 / span 2; 
+    grid-row: 2 / span 2;   
 }
 
 .service-button-image {
     align-self: flex-end;
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    max-width: 130px;
+    height: auto;
     transition: transform 0.3s;
+    object-fit: contain;
 }
 
 .service-button-text {
