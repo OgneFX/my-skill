@@ -1,16 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #D9D9D9;
-    background-color: #2e2e31;
+    background-color: #ffffff;
 }
 
 /* header styles */
 .main-header {
     height: 650px;
-    
+    width: 100%;
     margin: 0px auto;
     padding: 15px 0px;
     background-image: radial-gradient(circle, #414d63, #0d8168);
@@ -25,7 +29,7 @@ body {
     margin-top: 20px;
     display: flex;
     align-items: center;
-    border: 3px solid #D9D9D9; 
+    
 }
 
 .main-nav a {
@@ -88,22 +92,29 @@ body {
 }
 
 .block-text img {
-    margin-top: 80px;
-    margin-left: -220px;
+    position: relative;
+    top: 80px;
+    left: -100px;
+    object-fit: contain;  
+    object-position: center;
+    
 }
 
 .b-text {
-    width: 600px;
+    width: 500px;
     font-size: 35px;
     line-height: 60px;
+    padding-right: 85px;
     color: #D9D9D9;
 }
 
 .view-buttons {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-self: flex-end;
+    margin-left: -20px;
     gap: 15px;
     padding: 0;
     padding-right: 50px;
@@ -149,12 +160,9 @@ body {
 /* services*/
 
 .services {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1150px;
-    margin: 0 auto;
-    
+   
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 
@@ -165,13 +173,13 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
     grid-auto-rows: 1fr;
-    margin-top: 80px;
-    margin-bottom: 80px;
     padding: 0;
-    position: relative;
+    align-items: center;
+    justify-content: center;
     max-width: 1150px;   
+    margin: 0 auto;
     transition: all 0.5s ease;
-     
+         
 }
 
 .grid-item {
@@ -211,7 +219,7 @@ body {
 
 .grid-item.bottom-right {
     grid-column: 2 / span 2; 
-    grid-row: 2 / span 2;   
+    grid-row: 3 / span 2;   
 }
 
 .service-button-image {
@@ -241,16 +249,19 @@ body {
 
 
 .form-section{
+   background-color: #303331;
+   padding-top: 80px;
+   padding-bottom: 80px;
+}
+
+.form-section-main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 1150px;
-
     margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
     
-    border: 3px solid #0c1685; 
+
 }
 
 
@@ -258,10 +269,19 @@ body {
 
 .form-section-text {
     margin-left: 30px;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 40px;
     color: #D9D9D9;
+    
+    z-index: 1;
+}
 
+.form-section-img {
+    position: relative;
+    right: 150px;
+    object-fit: cover; 
+    filter: blur(3px); 
+    
 }
 
 /* Форма */
@@ -371,26 +391,86 @@ body {
     left: 100%;
   }
 
+
+  /* about (О нас) */
+
+
+.about {
+    
+    width: 1150px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+    
+}
+
+.about-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    padding: 20px;
+}
+
+.about-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about img {
+    border-radius: 30px;
+    margin-right: 80px;
+    box-shadow: 1px 1px 25px 10px rgba(135, 135, 144, 0.4);
+    
+
+}
+
+.about h2 {
+    font-size: 25px;
+    color: black;
+    
+}
+
+.about p {
+    line-height: 25px;
+    color: black;
+}
+
+/* .about li {
+    color: black;
+} */
+
+
+
+
+
   /* Бренды с которыми работаем */
 
   .brend-job{
-    background-color: #4f646e;
+    background-color: #303331;
     
+}
+
+.brend-job h2 {
+    margin-top: 80px;
+    margin-bottom: 35px;
+    font-size: 35px;
 }
 
 .brends {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 1150px;
     margin: 0 auto;
     
-    border: 3px solid #0c1685; 
 }
 
 .brends-list {
-    border: 3px solid #c11bda; 
-    margin-top: 80px;
+    
+    
     margin-bottom: 80px;
     display: flex;
     align-items: center;
@@ -398,55 +478,51 @@ body {
     flex-wrap: wrap;
     gap: 15px;
     list-style: none;
+    
 }
 
 .brends-item {
-    cursor: pointer;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    
     width: 180px;
     height: 100px;
     border-radius: 30px;
-    background-color: #D9D9D9;
+    background-image: linear-gradient(0.55turn, #fdfdfd, #53575c);
     border-color: #0d8168;
+    box-shadow: 1px 1px 25px 3px rgba(135, 135, 144, 0.4);
 }
 
 .brends-item-image {
     width: 140px ;
     height: 45px;
+    object-fit: scale-down; 
 
 }
 
-
-/* about (О нас) */
-
-
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1150px;
-    margin: 0 auto;
-    border: 3px solid #14a0cf; 
+.brends-item:nth-of-type(9) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
 
-.about-list {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border: 3px solid #14a0cf; 
+.brends-item:nth-of-type(12) img{
+    
+    object-fit: cover;
+    
 }
+
+
+
+
 
 
 /* reviews (Отзывы) */
 
-.reviews {
-    
-    background-color: #3c3838;
-}
+
 
 .reviews-form {
     display: flex;
@@ -454,7 +530,7 @@ body {
     justify-content: center;
     width: 1150px;
     margin: 0 auto;
-    border: 3px solid #e12211; 
+    
 }
 
 .reviews-list {
@@ -464,8 +540,7 @@ body {
     gap: 15px;
     margin-top: 80px;
     margin-bottom: 80px;
-    padding: 0;
-    border: 3px solid #119fe1; 
+    padding: 0; 
     list-style: none;
 }
 
@@ -494,10 +569,26 @@ body {
 
 }
 
+/* Нижняя форма заполнения */
+
+.footer-form-section {
+    width: 1150px;
+    margin: 40px auto;
+    
+   
+}
+
+.footer-login-box {
+    margin: 0;
+    
+}
+
+
+
 /* footer */
 
 .main-footer {
-    background-color: #8e6c6c;
+    background-image: linear-gradient(0.55turn, #303331, #3e464a);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
@@ -508,53 +599,46 @@ body {
     justify-content: space-between;
     width: 1150px;
     margin: 0 auto;
-    border: 3px solid #bfadab; 
+    
 }
 
 .footer-logo-address {
-    border: 3px solid #ffffff; 
+    
     margin-left: 40px;
 }
 
 .main-footer-list {
     margin-right: 40px;
-    align-self: flex-end;
 }
 
 .footer-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 15px;
     padding: 0;
-    border: 3px solid #119fe1; 
+    
     list-style: none;
 
 }
 
 .footer-item {
-    border: 3px solid #ffffff; 
+    display: flex;
+    flex-direction: column;
+   
+    
     width: 80px;
+    
 }
 
 .footer-item-img {
-    align-items: center;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.footer-item-text {
+    align-self: center;
+    margin: 0px;
 }
 
 
-
-/* Нижняя форма заполнения */
-
-.footer-form-section {
-    width: 1150px;
-    margin: 40px auto;
-    
-    border: 3px solid #bfadab; 
-}
-
-.footer-login-box {
-    margin: 0;
-    
-}
 
 

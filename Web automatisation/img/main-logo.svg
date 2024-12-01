@@ -1,3 +1,76 @@
-<svg width="130" height="53" viewBox="0 0 130 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M108.984 0L103.405 32.1353L97.1745 0H38.5908H29.6638C23.4335 0 18.0401 1.30404 13.5765 3.81898C9.11302 6.33392 5.67239 9.68717 3.34764 13.8787C1.11588 17.9772 0 22.355 0 27.0123C0 31.4833 1.11588 35.6749 3.25465 39.6801C5.39342 43.6854 8.74106 46.8524 13.1116 49.2742C17.4821 51.7891 22.7825 53 28.8269 53H38.9628V34.3708H28.9199C26.6881 34.3708 24.9213 33.6257 23.6195 32.1353C22.3176 30.645 21.6667 28.9684 21.6667 27.0123C21.6667 24.9631 22.3176 23.1002 23.7124 21.4235C25.0143 19.7469 26.7811 18.9086 28.9199 18.9086H48.7268V53H71.2303V18.9086H81.3662L90.3863 53H116.516L130 0H108.984Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="122.55831"
+   height="57.350109"
+   viewBox="0 0 122.55833 57.350109"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="main-logo.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="6.7338323"
+     inkscape:cx="39.130764"
+     inkscape:cy="40.393046"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:46.2258px;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.120697;stroke-linejoin:round;stroke-miterlimit:29.6;stroke-dasharray:none;stroke-opacity:1"
+     x="49.63102"
+     y="30.267303"
+     id="text2"
+     transform="scale(1.2404452,0.80616217)"><tspan
+       sodipodi:role="line"
+       id="tspan2"
+       x="49.63102"
+       y="30.267303"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.120697;stroke-dasharray:none;stroke-opacity:1">TECH</tspan><tspan
+       sodipodi:role="line"
+       x="49.63102"
+       y="88.049553"
+       id="tspan3"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.120697;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.99994928,0,0,1.0870153,0.00226112,-7.0436083)" /><tspan
+       sodipodi:role="line"
+       x="49.63102"
+       y="145.8318"
+       id="tspan4"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.120697;stroke-dasharray:none;stroke-opacity:1" /></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:52.7806px;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.164939;stroke-linejoin:round;stroke-miterlimit:29.6;stroke-dasharray:none;stroke-opacity:1"
+     x="54.305443"
+     y="63.967331"
+     id="text5"
+     transform="scale(1.145569,0.87292865)"><tspan
+       sodipodi:role="line"
+       id="tspan5"
+       x="54.305443"
+       y="63.967331"
+       style="stroke-width:0.164939;stroke:#ffffff;stroke-opacity:1">ASB</tspan><tspan
+       sodipodi:role="line"
+       x="54.305443"
+       y="129.94307"
+       id="tspan6"
+       style="stroke-width:0.164939;stroke:#ffffff;stroke-opacity:1" /></text>
 </svg>
