@@ -522,7 +522,6 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    
     padding: 0; 
     list-style: none;
 }
@@ -534,7 +533,7 @@ html, body {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    width: 350px;
+    width: 92vw;
     border-radius: 30px;
     overflow: hidden;
     transition: transform 0.3s;
@@ -548,9 +547,86 @@ html, body {
 }
 
 .reviews-item-text {
-    padding-right: 20px;
+    padding-right: 5vw;
 
 }
+
+
+/* Нижняя форма заполнения */
+
+.footer-form-section {
+    width: 94vw;
+    margin: 3vh 3vw;
+    
+   
+}
+
+.footer-login-box {
+    margin: 0;
+    
+}
+
+
+/* footer */
+
+.main-footer {
+    background-image: linear-gradient(0.55turn, #303331, #3e464a);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 40vh;
+    width: 100vw;
+}
+
+.main-footer-niz {
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.footer-logo-address {
+    margin-left: 3vw;
+    margin-bottom: 6vh;
+    
+}
+
+.footer-text {
+    margin: 0;
+}
+
+.main-footer-list {
+    
+   align-self: center;
+}
+
+.footer-list {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+   
+    
+    width: 24vw;
+    
+}
+
+.footer-item-img {
+    align-self: center;
+    margin-bottom: 1.5vh;
+}
+
+.footer-item-text {
+    align-self: center;
+    margin: 0px;
+}
+
 
 
     
@@ -1129,7 +1205,7 @@ html, body {
 
 /* Нижняя форма заполнения */
 
-.footer-form-section {
+/* .footer-form-section {
     width: 1150px;
     margin: 40px auto;
     
@@ -1139,13 +1215,13 @@ html, body {
 .footer-login-box {
     margin: 0;
     
-}
+} */
 
 
 
 /* footer */
 
-.main-footer {
+/* .main-footer {
     background-image: linear-gradient(0.55turn, #303331, #3e464a);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -1190,7 +1266,7 @@ html, body {
 .footer-item-img {
     align-self: center;
     margin-bottom: 10px;
-}
+} */
 
 .footer-item-text {
     align-self: center;
