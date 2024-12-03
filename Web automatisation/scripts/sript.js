@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let delay = 5000;
   let interval;
 
+  
   const updateActiveButton = (index) => {
       buttons.forEach((btn, i) => {
           btn.classList.toggle("active", i === index);

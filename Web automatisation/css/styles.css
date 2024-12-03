@@ -142,6 +142,416 @@ html, body {
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
+            /*Сервисы*/
+
+.services {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr;
+    
+    gap: 15px;
+    grid-auto-rows: 1fr;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 94vw;
+    margin: 0 3vw;
+    transition: all 0.5s ease;
+    
+         
+}
+
+.grid-item {
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.service-button {
+    border: none;
+    background-image: linear-gradient(0.55turn, #303331, #4f646e);
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    transition: all 1s ease;
+    
+    
+}
+
+.grid-item.expanded {
+    
+    grid-row: span 2;
+    z-index: 1;
+   
+  }
+
+.grid-item.bottom-right {
+   
+    grid-row: span 2;   
+}
+
+.service-button-image {
+    align-self: flex-end;
+    width: 35vw;
+    max-width: 130px;
+    height: auto;
+    transition: transform 0.3s;
+    object-fit: contain;
+}
+
+.service-button-text {
+    align-self: flex-start;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    line-height: 1em;
+    color: #D9D9D9;
+
+}
+
+.service-button-image:hover {
+    transform: scale(1.1);
+}
+
+
+/* Секция формы отправки  */
+
+
+.form-section{
+    background-color: #303331;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    
+ }
+ 
+ .form-section-main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     width: 96vw;
+     margin: 0 3vw;
+     
+
+ }
+ 
+ 
+ 
+ 
+ .form-section-text {
+     justify-self: center;
+     margin: 0;
+     margin-bottom: 4vh;
+     padding: 0 2vw;
+     font-size: 1.8em;
+     line-height: 1.3em;
+     color: #D9D9D9;
+     z-index: 1;
+ }
+ 
+ .form-section-img {
+     justify-self: center;
+     position: absolute;
+     visibility: hidden;
+     width: 50vw;
+     height: auto;
+     object-fit: cover; 
+     filter: blur(3px); 
+     z-index: 0;
+     
+ }
+ 
+ /* Форма */
+ 
+ .login-box {
+     
+     padding: 40px;
+     background: rgba(0,0,0,.5);
+     box-sizing: border-box;
+     box-shadow: 0 15px 25px rgba(0,0,0,.6);
+     border-radius: 10px;
+   }
+   
+   .login-box h2 {
+     margin: 0 0 30px;
+     padding: 0;
+     color: #fff;
+     text-align: center;
+   }
+   
+   .login-box .user-box {
+     position: relative;
+   }
+   
+   .login-box .user-box input {
+     width: 100%;
+     padding: 10px 0;
+     font-size: 16px;
+     color: #c5a6a6;
+     margin-bottom: 30px;
+     border: none;
+     border-bottom: 1px solid #fff;
+     outline: none;
+     background: transparent;
+   }
+   .login-box .user-box label {
+     position: absolute;
+     top:0;
+     left: 0;
+     padding: 10px 0;
+     font-size: 16px;
+     color: #fff;
+     pointer-events: none;
+     transition: .5s;
+   }
+   
+   .login-box .user-box input:focus ~ label,
+   .login-box .user-box input:valid ~ label {
+     top: -20px;
+     left: 0;
+     color: #03e9f4;
+     font-size: 12px;
+   }
+   
+   
+ 
+     /* Кнопка в форме */
+ 
+     .login-box-button p {
+     margin: 0;
+     font-size: 25px;
+     padding: 5px 10px;
+     color: #010101;
+   }
+   
+   .login-box-button {
+     text-decoration: none;
+     border: 1px solid rgb(144, 144, 157);
+     position: relative;
+     overflow: hidden;
+   }
+   
+   .login-box-button:hover {
+     box-shadow: 1px 1px 25px 10px rgba(120, 120, 129, 0.4);
+   }
+   
+   .login-box-button:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(
+       120deg,
+       transparent,
+       rgba(147, 135, 143, 0.4),
+       transparent
+     );
+     transition: all 650ms;
+   }
+   
+   .login-box-button:hover:before {
+     left: 100%;
+   }
+
+
+   /* about (О нас) */
+
+
+.about {
+    
+    width: 94vw;
+    margin: 3.5vh 3vw;
+   
+    
+    
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.about-text-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about img {
+   
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+    box-shadow: 1px 1px 25px 10px rgba(135, 135, 144, 0.4);
+    
+
+}
+
+.about h2 {
+    
+    justify-self: center;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: black;
+    line-height: 1.1em;
+    text-align: center
+    
+}
+
+.about p {
+    line-height: 1.5em;
+    color: black;
+}
+
+/* Бренды с которыми работаем */
+
+.brend-job{
+    background-color: #303331;
+    
+}
+
+.brends {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 94vw;
+    margin: 0 3vw;
+    
+}
+
+.brend-job h2 {
+    margin-top: 4vh;
+    margin-bottom: 3.5vh;
+    font-size: 2em;
+    line-height: 1.05em;
+    text-align: center
+}
+
+
+
+.brends-list {
+    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+    padding: 0;
+    gap: 15px;
+    list-style: none;
+    
+}
+
+.brends-item {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 45vw;
+    height: 12vh;
+    max-height: 100px;
+    border-radius: 30px;
+    background-image: linear-gradient(0.55turn, #fdfdfd, #53575c);
+    border-color: #0d8168;
+    box-shadow: 1px 1px 25px 3px rgba(135, 135, 144, 0.4);
+}
+
+.brends-item-image {
+    width: 75% ;
+    height: auto;
+    object-fit: scale-down; 
+
+}
+
+.brends-item:nth-of-type(9) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brends-item:nth-of-type(6) img{
+    width: 58%;
+     
+}
+
+
+/* reviews (Отзывы) */
+
+
+
+.reviews-form {
+    display: flex;
+    flex-direction: column;
+    width: 94vw;
+    margin: 3vh 3vw;
+}
+
+.reviews-form-text {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.05em;
+    text-align: center;
+    color: black;
+}
+
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+    padding: 0; 
+    list-style: none;
+}
+
+.reviews-item-form {
+    
+    background-image: linear-gradient(0.55turn, #303331, #4f646e);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.reviews-item-img-chel {
+    border-radius: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+.reviews-item-text {
+    padding-right: 20px;
+
+}
+
 
     
 
@@ -306,10 +716,9 @@ html, body {
 
 
 
-/* services*/
+/* Сервисы
 
 .services {
-   
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -391,12 +800,12 @@ html, body {
 
 .service-button-image:hover {
     transform: scale(1.1);
-}
+} */
 
 
-/* form section */
+/* Секция формы отправки  */
 
-
+/* 
 .form-section{
    background-color: #303331;
    padding-top: 80px;
@@ -431,10 +840,10 @@ html, body {
     object-fit: cover; 
     filter: blur(3px); 
     
-}
+} */
 
 /* Форма */
-
+/* 
 .login-box {
     
     padding: 40px;
@@ -502,7 +911,7 @@ html, body {
 
     /* Кнопка в форме */
 
-    .login-box-button p {
+    /* .login-box-button p {
     margin: 0;
     font-size: 25px;
     padding: 5px 10px;
@@ -538,10 +947,10 @@ html, body {
   
   .login-box-button:hover:before {
     left: 100%;
-  }
+  } */ */
 
 
-  /* about (О нас) */
+  /* about (О нас)
 
 
 .about {
@@ -584,7 +993,7 @@ html, body {
 .about p {
     line-height: 25px;
     color: black;
-}
+} */
 
 /* .about li {
     color: black;
@@ -596,7 +1005,7 @@ html, body {
 
   /* Бренды с которыми работаем */
 
-  .brend-job{
+  /* .brend-job{
     background-color: #303331;
     
 }
@@ -664,14 +1073,14 @@ html, body {
     
 }
 
-
+ */
 
 
 
 
 /* reviews (Отзывы) */
 
-
+/* 
 
 .reviews-form {
     display: flex;
@@ -716,7 +1125,7 @@ html, body {
 .reviews-item-text {
     padding-right: 20px;
 
-}
+} */
 
 /* Нижняя форма заполнения */
 
