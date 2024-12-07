@@ -53,7 +53,7 @@ html, body {
 
 
     .site-navigation-item {
-         margin-right: clamp(75px, 10vw, 100px);
+         margin-right: clamp(20px, 10vw, 100px);
      }
 
     .site-navigation-item:last-of-type {
@@ -90,7 +90,7 @@ html, body {
 
     .block-text img {
         position: relative;
-        top: 80px;
+        top: 70px;
         left: -100px;
         object-fit: contain;  
         object-position: center;
@@ -172,6 +172,19 @@ html, body {
          
 }
 
+.grid-item.expanded {
+    grid-column: span 2;
+    grid-row: span 2;
+    z-index: 1;
+   
+  }
+
+.grid-item.bottom-right {
+    grid-column: 2 / span 2; 
+    grid-row: 3 / span 2;   
+}
+
+
 .grid-item {
     position: relative;
     width: 100%;
@@ -200,17 +213,6 @@ html, body {
     
 }
 
-.grid-item.expanded {
-    grid-column: span 2;
-    grid-row: span 2;
-    z-index: 1;
-   
-  }
-
-.grid-item.bottom-right {
-    grid-column: 2 / span 2; 
-    grid-row: 3 / span 2;   
-}
 
 .service-button-image {
     align-self: flex-end;
@@ -221,12 +223,22 @@ html, body {
     object-fit: contain;
 }
 
+.grid-item:first-child img {
+    width: clamp(80px, 10vw, 130px);
+}
+
+.grid-item:nth-child(5) img {
+    width: clamp(80px, 10vw, 130px);
+}
+
 .service-button-text {
     align-self: flex-start;
+    width: 120px;
     margin-bottom: 0;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: calc(1em + 0.3vw);
+    line-height: 1.5em;
     color: #D9D9D9;
+    z-index: 1;
 
 }
 
@@ -240,15 +252,15 @@ html, body {
 
 .form-section{
    background-color: #303331;
-   padding-top: 80px;
-   padding-bottom: 80px;
+   padding-top: 10vh;
+   padding-bottom: 10vh;
 }
 
 .form-section-main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1150px;
+    width: clamp(700px, 75vw, 1150px); 
     margin: 0 auto;
     
 
@@ -259,16 +271,15 @@ html, body {
 
 .form-section-text {
     margin-left: 30px;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 2em;
+    line-height: 1.5em;
     color: #D9D9D9;
-    
     z-index: 1;
 }
 
 .form-section-img {
     position: relative;
-    right: 150px;
+    right: 10vw;
     object-fit: cover; 
     filter: blur(3px); 
     
@@ -387,10 +398,10 @@ html, body {
 
 .about {
     
-    width: 1150px;
+    width: clamp(700px, 75vw, 1150px); 
     margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     
     
 }
@@ -410,28 +421,24 @@ html, body {
 
 .about img {
     border-radius: 30px;
-    margin-right: 80px;
+    margin-right: 4vw;
     box-shadow: 1px 1px 25px 10px rgba(135, 135, 144, 0.4);
     
 
 }
 
 .about h2 {
-    font-size: 25px;
+    margin-top: 0;
+    font-size: 1.6em;
+    line-height: 1.2em;
     color: black;
     
 }
 
 .about p {
-    line-height: 25px;
+    line-height: 1.4em;
     color: black;
 } 
-
-/* .about li {
-    color: black;
-} */
-
-
 
 
 
@@ -443,9 +450,10 @@ html, body {
 }
 
 .brend-job h2 {
-    margin-top: 80px;
-    margin-bottom: 35px;
-    font-size: 35px;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    font-size: 2.3em;
+    text-align: center
 }
 
 .brends {
@@ -453,7 +461,7 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 1150px;
+    width: clamp(700px, 75vw, 1150px); 
     margin: 0 auto;
     
 }
@@ -461,13 +469,14 @@ html, body {
 .brends-list {
     
     
-    margin-bottom: 80px;
+    margin-bottom: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     list-style: none;
+    padding: 0;
     
 }
 
@@ -476,7 +485,6 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
     width: 180px;
     height: 100px;
     border-radius: 30px;
@@ -519,30 +527,30 @@ html, body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 1150px;
+    width: clamp(700px, 75vw, 1150px); 
     margin: 0 auto;
     
 }
 
-.reviews-list {
-    display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    gap: 15px;
-    
-    margin-bottom: 80px;
-    padding: 0; 
-    list-style: none;
-}
-
 .reviews-form-text {
-    margin-top: 80px;
+    margin-top: 10vh;
     font-size: 2em;
     line-height: 1.05em;
     text-align: center;
     color: black;
 }
+
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10vh;
+    padding: 0; 
+    list-style: none;
+}
+
+
 
 .reviews-item-form {
     
@@ -572,16 +580,13 @@ html, body {
 /* Нижняя форма заполнения */
 
 .footer-form-section {
-    width: 1150px;
-    margin: 40px auto;
-    
+    width: clamp(700px, 75vw, 1150px); 
+    margin: 0px auto;
+    margin-bottom: 10vh;
    
 }
 
-.footer-login-box {
-    margin: 0;
-    
-}
+
 
 
 
@@ -597,13 +602,12 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1150px;
+    width: clamp(700px, 75vw, 1150px); 
     margin: 0 auto;
     
 }
 
 .footer-logo-address {
-    
     margin-left: 40px;
 }
 
@@ -615,7 +619,6 @@ html, body {
     display: flex;
     gap: 15px;
     padding: 0;
-    
     list-style: none;
 
 }
@@ -623,8 +626,6 @@ html, body {
 .footer-item {
     display: flex;
     flex-direction: column;
-   
-    
     width: 80px;
     
 }
@@ -634,14 +635,50 @@ html, body {
     margin-bottom: 10px;
 }
 
+.footer-item-text {
+    align-self: center;
+    margin: 0px;
+}
+
+
+
+
+
 @media (min-width: 768px) and (max-width: 1024px){
     .main-header {
-      background-image: radial-gradient(circle, #414d63, #c88614);
+        background-image: radial-gradient(circle, #414d63, #0d8168);
+    }
+
+    .logo {
+        margin-right: 10vw;
     }
 
 
+    .site-navigation-item a {
+        font-size: 1.1em;
+    }
+
+    .view-buttons {
+        position: absolute;
+        top: 60vh;
+        right: 33vw;
+    }
+    
+    .block-text img {
+        left: 0px;
+        top: 50px;
+    }
+
+    .form-section-img {
+        width: 35%;
+        height: 35%;
+        right: 2vw;
+    }
+
       
   }
+
+
 
 
 
@@ -649,228 +686,134 @@ html, body {
 
     .main-header {
         height: 96vh;
+        
         }
         
 
         .main-nav {
-            width: 37vw;
-            margin-top: 2vh;
-            display: flex;
-            flex-direction: column;
+            flex-direction: column;                               
+            margin-bottom: 3.8vh; 
+            width: 89vw;   
+            margin: 0 3vw; 
+            
         }
 
          
         .logo {
-            margin-top: 0;
-            margin-bottom: 3.8vh;
-            margin-left: 2vw;
-            
+            justify-self: center;
+            margin: 0;
+            margin-bottom: 2vh;         
         }
+
+        
 
         /* навигация */
 
         .site-navigation {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            width: 96vw;
-            display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            
-        }
-
-        .site-navigation-item a {
-            font-size: 20px;
-            color: #D9D9D9;
-            text-transform: uppercase;
-            text-decoration: none;
+            width: 94vw;
         }
 
         .site-navigation-item {
-            margin-right: 10vw;
-          }
-        
-        .site-navigation-item:last-of-type {
-            margin-right: 0px;
+                justify-items: center;
         }
+
+        .site-navigation-item a {
+            font-size: 1em;
+        }
+
+        
 
         /* текст фото и переключатели */
 
         .block-text {
-            display: flex;
-            flex-direction: column;
             
-            width: 94vw;
-            margin-top: 3.8vh;
+            flex-direction: column;
+            align-items: center;
+            width: 89vw;
+            margin-top: 3vh;
             margin-left: 3vw;
             margin-right: 3vw;
+            
             
         }
 
         .b-text {
-            padding: 0;
-            margin: 0;
-            width: 95vw;
-            height: 28vh;
+            
+            padding: 0;            
+            width: 88vw;            
             font-size: 1.8em;
             line-height: 1.5em;
-            color: #D9D9D9;
+            margin-bottom: 4vh;
+           
         }
         
         .block-text img {
-            margin: 0;
-            align-self: center;
-            object-fit: contain;  
-            object-position: center;
+            position: static;
             
         }
 
         .view-buttons {
-            
-            display: flex;
-            align-items: center;
-            margin: 0;
-            margin-top: 9vh;
-            gap: 15px;
-            padding: 0;
-            list-style: none;
-            align-self: center;
-            
+            position: absolute;
+            top: 90vh;
+            right: auto;
+
         }
         
-        .view-buttons button {
-            width: 10px;
-            height: 12px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: rgb(80, 84, 83);
-            border: none;
-            border-radius: 100%;
-            cursor: pointer;
-        }
         
-        .view-buttons button:hover {
-            opacity: 0.8;
-          }
-          
-        .view-buttons button:active {
-            opacity: 0.6;
-          }
-          
-        .view-buttons .active {
-            background-color: rgb(9, 131, 153);
-          }
-        
-          .view-buttons button.active {
-            background-color: rgb(9, 131, 153);
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
 
             /*Сервисы*/
 
-.services {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
+        .services {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
 
 
-.grid-container {
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: 1fr;
-    
-    gap: 15px;
-    grid-auto-rows: 1fr;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    width: 94vw;
-    margin: 0 3vw;
-    transition: all 0.5s ease;
-    
-         
-}
+        .grid-container {
+            
+            grid-template-columns: 1fr;
+            grid-template-rows: unset;
+            width: 89vw;
+            margin: 0 3vw;
+           
+        }
 
-.grid-item {
-    
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
+        
+        .grid-item.expanded {
+            
+            grid-column: span 1;
+            
+        
+        }
+
+        .grid-item.bottom-right {
+            grid-row: span 2;   
+        }
 
 
-.service-button {
-    border: none;
-    background-image: linear-gradient(0.55turn, #303331, #4f646e);
-    outline: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-    transition: all 1s ease;
-    
-    
-}
+        .service-button-image {
+            width: 35vw;            
+        }
 
-.grid-item.expanded {
-    
-    grid-row: span 2;
-    z-index: 1;
-   
-  }
-
-.grid-item.bottom-right {
-   
-    grid-row: span 2;   
-}
-
-.service-button-image {
-    align-self: flex-end;
-    width: 35vw;
-    max-width: 130px;
-    height: auto;
-    transition: transform 0.3s;
-    object-fit: contain;
-}
-
-.service-button-text {
-    align-self: flex-start;
-    margin-bottom: 0;
-    font-size: 1.5em;
-    line-height: 1em;
-    color: #D9D9D9;
-
-}
-
-.service-button-image:hover {
-    transform: scale(1.1);
-}
+        .service-button-text {
+           font-size: 1.5em;
+            line-height: 1em;
+        }
 
 
 /* Секция формы отправки  */
 
 
 .form-section{
-    background-color: #303331;
     padding-top: 4vh;
     padding-bottom: 4vh;
-    
  }
  
  .form-section-main {
-     display: flex;
+    
      flex-direction: column;
-     align-items: center;
-     justify-content: space-between;
-     width: 96vw;
+     width: 89vw;
      margin: 0 3vw;
      
 
@@ -886,115 +829,22 @@ html, body {
      padding: 0 2vw;
      font-size: 1.8em;
      line-height: 1.3em;
-     color: #D9D9D9;
-     z-index: 1;
  }
  
  .form-section-img {
-     justify-self: center;
-     position: absolute;
+      position: absolute;
      visibility: hidden;
-     width: 50vw;
-     height: auto;
-     object-fit: cover; 
-     filter: blur(3px); 
-     z-index: 0;
-     
+        
  }
  
  /* Форма */
  
  .login-box {
      
-     padding: 40px;
-     background: rgba(0,0,0,.5);
-     box-sizing: border-box;
-     box-shadow: 0 15px 25px rgba(0,0,0,.6);
-     border-radius: 10px;
+    margin: 0;
    }
    
-   .login-box h2 {
-     margin: 0 0 30px;
-     padding: 0;
-     color: #fff;
-     text-align: center;
-   }
-   
-   .login-box .user-box {
-     position: relative;
-   }
-   
-   .login-box .user-box input {
-     width: 100%;
-     padding: 10px 0;
-     font-size: 16px;
-     color: #c5a6a6;
-     margin-bottom: 30px;
-     border: none;
-     border-bottom: 1px solid #fff;
-     outline: none;
-     background: transparent;
-   }
-   .login-box .user-box label {
-     position: absolute;
-     top:0;
-     left: 0;
-     padding: 10px 0;
-     font-size: 16px;
-     color: #fff;
-     pointer-events: none;
-     transition: .5s;
-   }
-   
-   .login-box .user-box input:focus ~ label,
-   .login-box .user-box input:valid ~ label {
-     top: -20px;
-     left: 0;
-     color: #03e9f4;
-     font-size: 12px;
-   }
-   
-   
- 
-     /* Кнопка в форме */
- 
-     .login-box-button p {
-     margin: 0;
-     font-size: 25px;
-     padding: 5px 10px;
-     color: #010101;
-   }
-   
-   .login-box-button {
-     text-decoration: none;
-     border: 1px solid rgb(144, 144, 157);
-     position: relative;
-     overflow: hidden;
-   }
-   
-   .login-box-button:hover {
-     box-shadow: 1px 1px 25px 10px rgba(120, 120, 129, 0.4);
-   }
-   
-   .login-box-button:before {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: -100%;
-     width: 100%;
-     height: 100%;
-     background: linear-gradient(
-       120deg,
-       transparent,
-       rgba(147, 135, 143, 0.4),
-       transparent
-     );
-     transition: all 650ms;
-   }
-   
-   .login-box-button:hover:before {
-     left: 100%;
-   }
+    
 
 
    /* about (О нас) */
@@ -1002,7 +852,7 @@ html, body {
 
 .about {
     
-    width: 94vw;
+    width: 89vw;
     margin: 3.5vh 3vw;
    
     
@@ -1025,10 +875,10 @@ html, body {
 
 .about img {
    
-    border-radius: 30px;
-    margin: 0 auto;
+    align-self: center;
+    margin: 0 3vw;
     margin-bottom: 4vh;
-    box-shadow: 1px 1px 25px 10px rgba(135, 135, 144, 0.4);
+   
     
 
 }
@@ -1036,91 +886,53 @@ html, body {
 .about h2 {
     
     justify-self: center;
-    margin: 0 auto;
-    font-size: 1.5em;
-    color: black;
-    line-height: 1.1em;
+    
     text-align: center
     
 }
 
 .about p {
     line-height: 1.5em;
-    color: black;
+    
 }
 
 /* Бренды с которыми работаем */
-
-.brend-job{
-    background-color: #303331;
-    
-}
-
-.brends {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 94vw;
-    margin: 0 3vw;
-    
-}
 
 .brend-job h2 {
     margin-top: 4vh;
     margin-bottom: 3.5vh;
     font-size: 2em;
     line-height: 1.05em;
-    text-align: center
+    
 }
+
+.brends {
+    
+    width: 89vw;
+    margin: 0 3vw;
+    
+}
+
+
 
 
 
 .brends-list {
-    
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-wrap: wrap;
-    margin-bottom: 5vh;
-    padding: 0;
-    gap: 15px;
-    list-style: none;
-    
+    margin-bottom: 5vh;   
 }
 
 .brends-item {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    width: 45vw;
-    height: 12vh;
-    max-height: 100px;
-    border-radius: 30px;
-    background-image: linear-gradient(0.55turn, #fdfdfd, #53575c);
-    border-color: #0d8168;
-    box-shadow: 1px 1px 25px 3px rgba(135, 135, 144, 0.4);
+    width: 100px;
 }
 
 .brends-item-image {
     width: 75% ;
     height: auto;
-    object-fit: scale-down; 
-
 }
 
-.brends-item:nth-of-type(9) img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.brends-item:nth-of-type(6) img{
-    width: 58%;
-     
-}
+
+
 
 
 /* reviews (Отзывы) */
@@ -1128,50 +940,25 @@ html, body {
 
 
 .reviews-form {
-    display: flex;
-    flex-direction: column;
-    width: 94vw;
+    width: 89vw;
     margin: 3vh 3vw;
 }
 
 .reviews-form-text {
     margin: 0;
-    font-size: 2em;
-    line-height: 1.05em;
-    text-align: center;
-    color: black;
+   
 }
 
-.reviews-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 0; 
-    list-style: none;
-}
+
 
 .reviews-item-form {
-    
-    background-image: linear-gradient(0.55turn, #303331, #4f646e);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    width: 92vw;
-    border-radius: 30px;
-    overflow: hidden;
-    transition: transform 0.3s;
+    width: 89vw;
 }
 
-.reviews-item-img-chel {
-    border-radius: 50px;
-    margin-left: 15px;
-    margin-top: 15px;
-    align-self: flex-start;
-}
+
 
 .reviews-item-text {
+    font-size: calc(0.6em + 1vw);
     padding-right: 5vw;
 
 }
@@ -1180,24 +967,16 @@ html, body {
 /* Нижняя форма заполнения */
 
 .footer-form-section {
-    width: 94vw;
-    margin: 3vh 3vw;
-    
-   
+    width: 89vw;
+    margin: 3vh 3vw;   
 }
 
-.footer-login-box {
-    margin: 0;
-    
-}
+
 
 
 /* footer */
 
 .main-footer {
-    background-image: linear-gradient(0.55turn, #303331, #3e464a);
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
     height: 40vh;
     width: 100vw;
 }
@@ -1205,68 +984,39 @@ html, body {
 .main-footer-niz {
     display: flex;
     flex-direction: column;
-    
+    width: 89vw;
+    margin: 0 3vw;   
     
     
 }
 
 .footer-logo-address {
-    margin-left: 3vw;
+    margin-left: 0;
     margin-bottom: 6vh;
     
 }
 
-.footer-text {
-    margin: 0;
-}
-
 .main-footer-list {
-    
-   align-self: center;
-}
+    align-self: center;
+    margin: 0;
+ }
 
-.footer-list {
-    display: flex;
-    gap: 15px;
-    padding: 0;
-    list-style: none;
 
-}
+
+
 
 .footer-item {
-    display: flex;
-    flex-direction: column;
-   
-    
+
     width: 24vw;
     
 }
 
 .footer-item-img {
-    align-self: center;
+  
     margin-bottom: 1.5vh;
 }
 
-.footer-item-text {
-    align-self: center;
-    margin: 0px;
-}
 
 
 
 }
-
-
-
-/* @media (max-width: 1024px) {
-   
-
-
-
-} */
-
-
-
-
-
-
